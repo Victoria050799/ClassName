@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <input id="elem" type="button" value="Смени цвет!"/>
+
+  <img class="img1" src="вода.jpg" alt="">
+
+  <img class="img2" src="поле.jpg" alt="">
+
+  <img class="img3" src="город.jpg" alt="">
+
+    <script>
+        let backgroundBody=document.querySelector("body");
+        let btn = document.querySelector("#elem");    
+        
+        btn.addEventListener('click', () => {
+         let colors = ['#FF1493','#98FB98','#DDA0DD','#1E90FF','#2F4F4F'];
+         let randColor = Math.floor(Math.random() * colors.length);
+         backgroundBody.style.background=colors[randColor];
+         
+         })
+
+let picture= document.querySelector('.img1')
+picture.addEventListener('click', () => {
+    picture.style.width= '400px';
+    picture.style.height= '400px';
+   
+    picture3.style.width= '250px';
+    picture3.style.height= '250px';
+   
+    picture2.style.width= '250px';
+    picture2.style.height= '250px';
+});
+
+
+let picture2= document.querySelector('.img2')
+picture2.addEventListener('click', () => {
+    picture2.style.width= '400px';
+    picture2.style.height= '400px';
+   
+    picture3.style.width= '250px';
+    picture3.style.height= '250px';
+   
+    picture.style.width= '250px';
+    picture.style.height= '250px';
+});
+
+let picture3= document.querySelector('.img3')
+picture3.addEventListener('click', () => {
+    picture3.style.width= '400px';
+    picture3.style.height= '400px';
+   
+    picture2.style.width= '250px';
+    picture2.style.height= '250px';
+   
+    picture.style.width= '250px';
+    picture.style.height= '250px';
+});
+
+
+
+
+            </script>
+
+</body>
+</html>
